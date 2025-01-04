@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*===== Variable Define =====*/
+:root {
+  --primary-color: #037c6e;
+  --secondry-color: #007F73;
+  --third-color: #026156;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-gray: #999;
+  --black-color: #000;
+  --primary-font: 'Roboto', sans-serif;
+  --secondry-font: 'Quicksand', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+
+/*
+=========================================
+    Custom Scrollbar
+=========================================
+*/ 
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+} 
+::-webkit-scrollbar-track {
+  background: var(--white-color); 
+} 
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color); 
+} 
+
+/*
+==========================================
+   Custom CSS Design
+==========================================
+*/
+
+h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: var(--secondry-color);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  color: var(--secondry-color);
+  line-height: 3rem;
+
+}
+
+h3 {
+  color: var(--secondry-color);
+  font-family: var(--secondry-font);
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  color: var(--secondry-color);
+  font-family: var(--secondry-font);
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+
+
+.main-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color: var(--primary-color);
+  border: 0.1875rem solid var(--primary-color);
+  color: var(--white-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+
+.main-btn a:hover{
+  color: var(--primary-color);
+}
+
+.white-btn {
+  padding: 0.625rem 1.875rem;
+  line-height: 25px;
+  background-color: var(--white-color);
+  border: 0.1875rem solid var(--white-color);
+  color: var(--text-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+
+.btn {
+  padding: 0.625rem 1.875rem;
+  line-height: 25px;
+  background-color: var(--white-color);
+  border: 0.1875rem solid var(--white-color);
+  color: var(--primary-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.white-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn:hover {
+  border-color: var(--white-color);
+  border-radius: 50px;
+}
+
+.wrapper {
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+}
+
+.text-content {
+  width: 70%;
+  margin: auto;
+}
+
+.Artists-section h2,
+.Click-text h2 {
+  color: var(--white-color);
+}
+
+/*
+==========================================
+   Header Design
+==========================================
+*/
+.navigation-wrap{
+  position:fixed;
+  width:100%;
+  left:0;
+  z-index:1000;
+  -webkit-transition:all 0.3s ease-out;
+  transition:all 0.3s ease-out;
+} 
+.navigation-wrap .nav-item{
+  padding:0 0.625rem;
+  transition:all 200ms linear;
+}
+.navbar-toggler:focus{
+  outline:unset;
+  border:unset;
+  box-shadow: none;
+}
+
+
+.nav-link{
+  font-size:0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color:var(--primary-color);
+  letter-spacing: 1px;
+  transition: 1s ease;
+}
+
+.nav-link:hover{
+  color: var(--primary-color);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
+.dropdown-style{
+  border: var(--primary-color) solid 1px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+.dropdown-divider{
+  border: var(--primary-color) solid 2px;
+}
+
+.dropdown-item{
+  transition:all 0.3s ease-in-out;
+}
+
+.dropdown-item:hover{
+  background-color: var(--primary-color);
+  color: white;
+  transform: scale(1.04);
+}
+
+.navigation-wrap .main-btn{
+  padding:0.3125rem 1.4375rem;
+  box-shadow: none;
+  margin-left:0.625rem;
+} 
+
+/* navbar styling on scroll */
+
+.navigation-wrap.scroll-on{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:var(--white-color);
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.09);
+  transition:all .15s ease-in-out 0s;
+}
+/*
+==========================================
+    Index Page
+==========================================
+*/
+ 
+/* Top-banner */
+
+.top-banner{
+  width:100%;
+  height: 800px;
+  background: url('images/bg1.png') no-repeat center;
+  background-size:cover;
+  padding: 11.875rem 0 9.375rem;
+}
+
+.top-banner p{
+padding: 0.56rem 0;
+}
+
+
+/* about section Design */
+
+
+.about-section{
+  background: var(--white-color);
+}
+.about-section .card,
+.about-section .card img{
+  border-radius: 0.625rem;
+  margin-bottom: 20px;
+}
+.about-section .text-sec{
+  padding-left:2rem;
+}
+
+.text-sec p{
+  margin-top: 20px;
+}
+
+.image-effect {
+  transition: 1s ease;
+}
+
+.image-effect:hover{
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s ease;
+} 
+ 
+/*  Gallery Design  */
+
+.Gellery-section{
+  width:100%;
+  height:28.125rem;
+  background: url('images/gellery.png') no-repeat center;
+  background-size: cover;
+  padding-top:100px;
+  text-align: center;
+  margin-top: 100px;
+} 
+.Gellery-section h2{
+  color: var(--white-color) ;
+}
+
+.Gellery-section p {
+  margin-top: 20px;
+  color: var(--white-color);
+}
+
+
+/*  FAQ section Design  */
+
+
+.faq h4 span{
+  color:var(--primary-color);
+  font-size: 1.875rem;
+  margin-right:0.3125rem;
+} 
+.Click{
+  width:100%;
+  background:url('images/back-side.jpeg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position:0 71.9125px;
+  padding:4.375rem 0;
+  
+}
+
+
+/*
+==========================================
+footer section Design
+==========================================
+*/
+.footer{
+  background: var(--primary-color);
+}
+.footer .footer-link{
+  font-size:1rem;
+  color:var(--white-color);
+  padding:0 1.875rem;
+}
+.footer .footer-link:hover{
+  color:var(--white-color) !important;
+}
+.footer a i{
+  font-size: 1.5rem;
+  color:var(--white-color);
+  padding:0 1rem;
+}
+
+/* ===============
+Responsive Design
+================= */
+
+@media (max-width:1024px) {
+
+    /* about section */
+    
+}
+
+@media (max-width: 991px) {
+
+    /*custom classes  */
+    .text-content{
+        width:100%;
+    }
+     
+
+    /* navbar brand */
+    .navigation-wrap .navbar-brand img{
+        height:3.8125rem;
+    }
+    .navigation-wrap{
+        text-align: center;
+        background-color: var(--white-color);
+    }
+    .navigation-wrap .nav-link{
+        line-height: 1.875rem;
+    }
+    /* Banner Design */
+    .top-banner,
+    .arabic-top-banner{
+        padding:9.375rem 0 9.375rem;
+    }
+
+    /* carousel design */
+    .Artists-section .carousel-item .carousel-caption p{
+        padding:0;
+    }
+     
+}
+
+@media (max-width: 767px) {
+
+    /* custom css */
+    h1{
+        font-size:2.8rem;
+    }
+    h2{
+        font-size:2rem;
+        line-height: 2.0625rem;
+    }
+     
+
+    /* top banner */
+    .top-banner
+    ,.arabic-top-banner,
+    .calligraphy-top-banner{
+        padding:10.875rem 0 9.375rem;
+    }
+    
+
+    /* Gellery section */
+    .Gellery-section{
+        height:auto;
+        padding:3rem 0;
+    }
+    
+
+    /* carousel design */
+    .Artists-section .carousel-item{
+        padding:11rem 3.125rem;
+    }
+
+    /* footer link */
+    .footer .footer-link,
+    .footer a i{
+        padding:0 0.7rem;
+    }
+     
+}
+
+@media (max-width:330px) {
+
+    /* carousel design */
+    .Artists-section .carousel-item{
+        padding:13rem 3.125rem;
+    }
+     
+}
+        
+      
+/*
+=========================================
+=========================================
+    Arabic Calligraphy page
+    Greek Calligraphy page
+    Indic Calligraphy page
+=========================================
+=========================================
+*/
+
+
+/*
+==========================================
+   arabic-Calligraphy Design
+==========================================
+*/
+
+.calligraphy{
+  margin-top: 100px;
+}
+
+.main-text{
+  padding-top: 100px;
+}
+
+.main-text p{
+  padding-top: 15px;
+}
+
+.image-st{
+  padding: 10px;
+ }
+
+.Artists-section{
+  margin: 100px 0;
+  background-color: var(--primary-color);
+}
+.Artists-section .carousel-item{
+  margin-top:3rem;
+  padding:8rem 3.125rem;
+  background-color:var(--white-color);
+  border-radius: 0.9375rem;
+  text-align: center;
+} 
+.Artists-section .carousel-caption img{
+  max-width:5rem;
+  border-radius: 50%;
+}
+
+.Artists-section .carousel-item .carousel-caption p{
+  font-size: 1.3125rem;
+  line-height: 2.0625rem;
+  padding:0 11% 0.625rem;
+}
+.Artists-section .carousel-indicators{
+  bottom:-2.8125rem;
+}
+.Artists-section .carousel-indicators button{
+  width:15px;
+  height:15px;
+  outline:none;
+  border-radius: 50%;
+  border:none;
+  margin-right:1rem;
+  opacity:0.2;
+}
+.Artists-section .carousel-indicators button.active{
+  opacity:1;
+}
+
+/*
+==========================================
+   Grrek-Calligraphy Design
+==========================================
+*/
+
+
+/*
+==========================================
+   indic-Calligraphy Design
+==========================================
+*/
+
+
+/* ========================
+    Contact-us page Css 
+  ==========================*/
+
+  .contact-top-banner{
+    width:100%;
+    height: 800px;
+    background: url('images/bg1.png') no-repeat center;
+    background-size:cover;
+    padding: 14.875rem 0 9.375rem;
+  }
+
+  .section-heading{
+    text-align: center;
+    color: var(--white-color);
+    margin-bottom: 30px;
+  }
+
+  .line{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+  }
+
+  .main-icons{
+    margin-top: 80px;
+  }
+
+  .contact-icons {
+    font-size: 60px;
+    margin: 50px 0px;
+    color: var(--primary-color);
+  }
+
+  .contact-form {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 30px;
+    padding: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="tel"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid var(--white-color);
+  }
+
+  .contact-form input[type="submit"],
+  .contact-form input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .error {
+    color: rgb(255, 238, 0)
+  }
+
+  /* ========================
+    Gellery page Css 
+  ==========================*/
+
+  #carousel .carousel-item.boat{
+    background-image:url("images/categories1.jpg");
+  }
+  #carousel .carousel-item.sea{
+    background-image:url("images/back-side.jpeg");
+  }
+  #carousel .carousel-item.river{
+    background-image:url("images/image2.jpeg");
+  }
+  #carousel .carousel-item{
+    height:100vh;
+    width:100%;
+    min-height:350px;
+    background:no-repeat center center scroll;
+    background-size:cover;
+  }
+  #carousel .carousel-inner .carousel-item{
+    transition:-webkit-transform 2s ease;
+    transition:transform 2s ease;
+    transition:transform 2s ease, -webkit-transform 2s ease;
+  }
+  #carousel .carousel-item .caption{
+    background:rgba(0, 0, 0, 0.644);
+    padding:40px;
+    color:white;
+    animation-duration: 1s;
+    animation-delay: 2s;
+  }
+  #carousel .caption h2{
+    color: var(--white-color);
+    animation-duration: 1s;
+    animation-delay: 2s;
+  }
+  #carousel .caption p{
+    color: var(--white-color);
+    animation-duration: 1s;
+    animation-delay: 2.2s;
+  }
+  
+  #carousel .caption a{
+    animation-duration: 1s;
+    animation-delay: 2.4s;
+  }
+  
+
+  /* ========================
+    feedback page Css 
+  ==========================*/
+
+  .Feedback-foam{
+    margin-top: 80px;
+  }
+
+  .feedback-body{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 30px;
+    padding: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .feedback-body h2{
+    color: var(--white-color);
+  }

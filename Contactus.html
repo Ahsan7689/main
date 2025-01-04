@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <title>Inked Tradition</title>
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+   
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-- header design -->
+     <header>
+      <nav class="navbar navbar-expand-lg navigation-wrap">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img decoding="async" src="images/logo.png" style="height: 80px; width: 80px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Categories
+                </a>
+                <ul class="dropdown-menu dropdown-style" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Arabic Calligraphy.html">Arabic Calligraphy</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Greek calligraphy.html">Greek Calligraphy</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Indic Calligraphy.html">Indic Calligraphy</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contactus.html">Contact us</a>
+              </li>
+              <li>
+                <a href="Feedback.html" class="main-btn">feedback</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  <!-- Main Heading -->
+  <section id="Contact-us">
+    <div class="container-fluid px-0 contact-top-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6">
+            <h1>Contact US</h1>
+            <p>We're here to help! Whether you have questions, feedback, or simply want to say hello, we'd love to hear from you. Feel free to reach out to us using the contact form below, and we'll get back to you as soon as possible. Your thoughts and inquiries are important to us, and we're committed to providing you with the assistance you need. Thank you for considering us, and we look forward to connecting with you
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Icons Section -->
+  <div class="row justify-content-center main-icons">
+    <div class="col-md-12 text-center">
+      <i class="fas fa-phone contact-icons"></i>
+      <h3>Phone</h3>
+      <p>+123-756-9862</p>
+    </div>
+    <div class="col-md-12 text-center">
+      <i class="fas fa-envelope contact-icons"></i>
+      <h3>Email</h3>
+      <p>infocalligraphy@gmail.com</p>
+    </div>
+    <div class="col-md-12 text-center">
+      <i class="fas fa-location-arrow contact-icons"></i>
+      <h3>Location</h3>
+      <p>Metro, Shah Faisal, Karachi, Pakistan</p>
+    </div>
+  </div>
+
+  <!-- Contact Form Section -->
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-12 md-12 sm-12">
+            <form class="contact-form" id="contactForm" novalidate>
+            <h2 class="section-heading">Get In Touch</h2>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name*" required>
+            <div class="error" id="firstNameError"></div>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name*" required>
+            <div class="error" id="lastNameError"></div>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email*" required>
+            <div class="error" id="emailError"></div>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number*" required>
+            <div class="error" id="phoneError"></div>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message*" required></textarea>
+            <div class="error" id="messageError"></div>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+          <button type="reset" class="btn btn-danger">Reset</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5118.369390445204!2d67.15312502219412!3d24.89000873845926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33999ec8ecc87%3A0xda9cc5004c86e53f!2sMETRO%20Stargate%2C%20Karachi!5e0!3m2!1sen!2s!4v1711347070632!5m2!1sen!2s" width="100%" height="450" style="border:0; margin-bottom: 50px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <footer id="footer">
+    <div class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <a class="footer-link fs-4" href="index.html">Home</a>
+            <a class="footer-link fs-4" href="Gallery.html">Gallery</a>
+            <a class="footer-link fs-4" href="aboutus.html">About-us</a>
+            <a class="footer-link fs-4" href="Contactus.html">Contact-us</a>
+            <a class="footer-link fs-4" href="Feedback.html">Feedback</a>
+
+          <div class="col-md-12 text-center py-5 ">
+            <a class="footer-link fs-4" href="">Categoreies</a>
+          <div class="col-md-12 text-center py-3">
+            <a class="footer-link fs-6" href="Arabic Calligraphy.html">Arabic Calligraphy</a>
+            <a class="footer-link fs-6" href="Greek calligraphy.html">Greek Calligraphy</a>
+            <a class="footer-link fs-6" href="Indic Calligraphy.html">Indic Calligraphy</a>
+            
+            <div class="footer-social mt-4 pt-5 text-center">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="footer-copy">
+              <div class="copy-right text-center">
+                <p class="text-light">© 2024. Inked Tradition. All rights reserved.</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+  <!-- own js -->
+  <script src="main.js"></script>
+</body>
+</html>
